@@ -13,43 +13,61 @@
 </script>
 <div class="border border-primary">
 	<h1 class="text-center">Internship Form</h1>
-<form >
+<form class="needs-validation">
 <div class="d-flex flex-wrap justify-content-between">
   <div class="mb-3 me-3">
     <label for="first-name-input" class="form-label">First Name</label>
-	<input type="text" class="form-control" required id="first-name-input" aria-describedby="emailHelp">
+	<input type="text" class="form-control"  id="first-name-input" aria-describedby="emailHelp">
+	  <div class="invalid-feedback">
+        First name required!
+      </div>
   </div>
   <div class="mb-3 me-3">
     <label for="last-name-input" class="form-label">Last Name</label>
-    <input type="text" class="form-control" required id="last-name-input" aria-describedby="emailHelp">
+    <input type="text" class="form-control"  id="last-name-input" aria-describedby="emailHelp">
+	  <div class="invalid-feedback">
+        Last name required!
+      </div>
   </div>
   <div class="mb-3">
     <label for="email-input" class="form-label">Email Address</label>
-    <input type="email" class="form-control" required id="email-input" aria-describedby="emailHelp">
+    <input type="email" class="form-control"  id="email-input" aria-describedby="emailHelp">
+	  <div class="invalid-feedback">
+        Email required!
+      </div>
   </div>
 </div>
 <div class="d-flex  justify-content-between">
 	<div class="mb-3 col-6">
     <label for="college-input" class="form-label">College</label>
-    <input type="text" class="form-control" required id="college-input" aria-describedby="emailHelp">
+    <input type="text" class="form-control"  id="college-input" aria-describedby="emailHelp">
+		<div class="invalid-feedback">
+        Please provide a valid college.
+      </div>
 	</div>
 	<div class="mb-3 col-2">
     <label for="grad-year-select" class="form-label">Graduation Year</label>
-	    <select class="form-select" required id="grad-year-select">
+	    <select class="form-select"  id="grad-year-select">
 			<option selected>Choose...</option>
 			<option value="2020">2020</option>
 		    <option value="2021">2021</option>
 		    <option value="2022">2022</option>
 			<option value="2023">2023</option>
 		</select>
+		<div class="invalid-feedback">
+        Please select a valid Graduation Year.
+      </div>
 	</div>
 	<div class="mb-3 col-2">
-    <label for="roll-no-input" class="form-label">Roll No</label>
-    <input type="text" class="form-control" required id="roll-no-input" aria-describedby="emailHelp">
+    <label for="roll-no-input" class="form-label">Roll No.</label>
+    <input type="text" class="form-control"  id="roll-no-input" aria-describedby="emailHelp">
+		<div class="invalid-feedback">
+        Please provide a valid Roll No.
+      </div>
 	</div>
 </div>	
   <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" required id="conditions-checkbox">
+    <input type="checkbox" class="form-check-input"  id="conditions-checkbox">
     <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
   </div>
   <button type="submit" class="btn btn-primary">Submit form</button>
